@@ -30,8 +30,4 @@ class APIResponse(Response):
             self.headers["Content-Type"] = str(media_type)
 
     def get_renderer_options(self):
-        return {
-            "status": self.status,
-            "status_code": self.status_code,
-            "headers": self.headers,
-        }
+        pass
